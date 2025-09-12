@@ -1,6 +1,6 @@
 import Button from "@/components/Button";
 import Heading from "@/components/Heading";
-import { Clients } from "@/constants/clients";
+import { Clients } from "@/constants/Clients";
 import { ArrowRightCircle, MoveRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
