@@ -1,24 +1,24 @@
-import { Clients } from "@/types/Interfaces";
+import { Client } from "@/types/Interfaces";
 
-export const Clients: Clients[] = [
+export const Clients: Client[] = [
   {
-    imageUrl: "/vga.png",
-    alt: "Client1",
-  },
-  {
-    imageUrl: "/vga.png",
+    imageUrl: "/yourLogo-red.png",
     alt: "Client2",
   },
   {
-    imageUrl: "/vga.png",
+    imageUrl: "/yourLogo-green.png",
     alt: "Client3",
   },
   {
-    imageUrl: "/vga.png",
+    imageUrl: "/yourLogo-blue.png",
     alt: "Client4",
   },
   {
-    imageUrl: "/vga.png",
+    imageUrl: "/yourLogo-yellow.png",
     alt: "Client5",
+  },
+  {
+    imageUrl: "/yourLogo-black.png",
+    alt: "Client6",
   },
 ];

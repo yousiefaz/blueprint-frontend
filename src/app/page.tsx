@@ -1,25 +1,31 @@
 import Button from "@/components/Button";
+import FeatureCard from "@/components/FeatureCard";
+import FeatureBlock from "@/components/FeatureBlock";
 import Heading from "@/components/Heading";
 import { Clients } from "@/constants/Clients";
-import { ArrowRightCircle, MoveRight } from "lucide-react";
+import { Features, FeaturesBlock } from "@/constants/Features";
+import { ArrowBigRight, ArrowRightCircle, MoveRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import PricingCard from "@/components/PricingCard";
+import { pricingItems } from "@/constants/Pricing";
 
 const Home = () => {
   return (
     <main className="overflow-x-hidden lg:pt-24 antialiased flex items-center justify-center ">
       <div className="relative container">
         <Image
-          src={"/bg.jpg"}
+          src="/bg2.png"
           width={1920}
           height={1080}
           alt="background"
-          className="absolute -z-50 w-full h-full -top-20 left-0 opacity-10"
+          className="absolute -z-50 w-full h-auto top-0 left-0 object-contain opacity-10"
         />
+
         {/* Home Section */}
         <section
           id="Home"
-          className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+          className="w-full max-w-7xl mt-14 sm:mt-14 md:mt-12 lg:-mt-18 mx-auto px-4 sm:px-6 lg:px-8"
         >
           <figure className="bubble w-96 lg:w-[520px] h-96 bg-indigo-600 top-16 -left-40" />
           <figure className="bubble w-96 lg:w-[430px] h-96 bg-sky-600 bottom-16 -right-20 md:bottom-44 " />
@@ -46,7 +52,7 @@ const Home = () => {
               </div>
             </div>
             <Image
-              src={"/hero.png"}
+              src={"/hero.svg"}
               width={670}
               height={370}
               alt="banner"
@@ -72,7 +78,66 @@ const Home = () => {
           ))}
         </section>
         {/* Features Section */}
+        <section
+          id="features"
+          className="flex flex-col gap-y-12 md:gap-y-20 lg:gap-y-28 "
+        >
+          {/* subSection - 1*/}
+          <div className="relative grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
+            <div className="absolute inset-0 -z-50">
+              <Image
+                src="/bg3.png"
+                alt="banner"
+                fill
+                className="object-cover opacity-5"
+                priority
+              />
+            </div>
+            <div className="flex flex-col gap-4 items-center text-center lg:items-start lg:text-start">
+              <Heading title="Features that simplify sales, centralize leads, and keep the focus on your customers." />
+              <p className="lg:max-w-[34rem] leading-normal sm:text-lg sm:leading-8">
+                Our CRM equips you with the tools to organize leads, streamline
+                your sales process, and strengthen customer relationships. With
+                intuitive features and real-time insights, you can stay focused
+                on what matters most—building connections and closing deals
+                faster.
+              </p>
+              <Button>
+                get started
+                <ArrowBigRight className="w-4 h-4" />
+              </Button>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-1 gap-4">
+              {Features.map((feature, index) => (
+                <FeatureCard key={index} {...feature} />
+              ))}
+            </div>
+          </div>
+          {/* subSection - 2*/}
+          {FeaturesBlock.map((item, index) => (
+            <FeatureBlock key={index} {...item} />
+          ))}
+        </section>
         {/* Pricing Section */}
+        <section id="priicing" className="flex flex-col gap-8">
+          <Heading
+            title="Flexible Plans for Every Stage of Your Business"
+            isCentered
+          />
+          <div className="max-w-[12rem] w-full mx-auto p-1 flex text-base bg-slate-800 rounded-lg">
+            <p className="basis-1/2 text-center py-2  text-white capitalize font-semibold tracking-wide rounded-lg cursor-pointer bg-sky-600">
+              monthly
+            </p>
+            <p className="basis-1/2 text-center py-2  text-white capitalize font-semibold tracking-wide rounded-lg cursor-pointer">
+              annually
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2  lg:grid-cols-3 gap-4">
+            {pricingItems.map((item, index) => (
+              <PricingCard key={index} {...item} />
+            ))}
+          </div>
+        </section>
         {/* Testimonials Section */}
         {/* Contact Section */}
         {/* Footer Section */}
