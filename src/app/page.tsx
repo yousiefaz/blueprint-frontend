@@ -7,8 +7,9 @@ import { Features, FeaturesBlock } from "@/constants/Features";
 import { ArrowBigRight, ArrowRightCircle, MoveRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import PricingCard from "@/components/PricingCard";
-import { pricingItems } from "@/constants/Pricing";
+import { PricingSection } from "@/components/PricingSection";
+import TestimonialCard from "@/components/TestimonialCard";
+import { Testimonials } from "@/constants/Testimonials";
 
 const Home = () => {
   return (
@@ -119,27 +120,17 @@ const Home = () => {
           ))}
         </section>
         {/* Pricing Section */}
-        <section id="priicing" className="flex flex-col gap-8">
-          <Heading
-            title="Flexible Plans for Every Stage of Your Business"
-            isCentered
-          />
-          <div className="max-w-[12rem] w-full mx-auto p-1 flex text-base bg-slate-800 rounded-lg">
-            <p className="basis-1/2 text-center py-2  text-white capitalize font-semibold tracking-wide rounded-lg cursor-pointer bg-sky-600">
-              monthly
-            </p>
-            <p className="basis-1/2 text-center py-2  text-white capitalize font-semibold tracking-wide rounded-lg cursor-pointer">
-              annually
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2  lg:grid-cols-3 gap-4">
-            {pricingItems.map((item, index) => (
-              <PricingCard key={index} {...item} />
-            ))}
-          </div>
-        </section>
+        <PricingSection />
         {/* Testimonials Section */}
+        <section id="testimonials" className="flex flex-col gap-8">
+          <Heading title="what our users say" isCentered />
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 "></div>
+          {Testimonials.map((testimonial, index) => (
+            <TestimonialCard key={index} {...testimonial} />
+          ))}
+        </section>
         {/* Contact Section */}
+
         {/* Footer Section */}
       </div>
     </main>

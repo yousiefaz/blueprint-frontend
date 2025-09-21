@@ -1,9 +1,11 @@
-import { Pricing } from "@/types/Interfaces";
+import { Pricing, PricingMode } from "@/types/Interfaces";
 import { FC } from "react";
 import Button from "@/components/Button";
 import { Check } from "lucide-react";
 
-interface PricingCardProps extends Pricing {}
+interface PricingCardProps extends Pricing {
+  mode: PricingMode;
+}
 
 const PricingCard: FC<PricingCardProps> = ({
   title,
@@ -13,6 +15,7 @@ const PricingCard: FC<PricingCardProps> = ({
   features,
   glowPosition,
   isMostPopular,
+  mode,
 }) => {
   return (
     <article
@@ -35,9 +38,9 @@ const PricingCard: FC<PricingCardProps> = ({
       <h1 className="font-bold text-slate-100 text-base capitalize">{title}</h1>
       <p>{description}</p>
       <h1 className="font-extrabold text-slate-100 text-4xl">
-        ${monthlyPrice}
+        ${mode === "monthly" ? monthlyPrice : annuallyPrice}
         <small className="text-base text-slate-300 font-semibold ps-1">
-          /month
+          /${mode === "monthly" ? "month" : "year"}
         </small>
       </h1>
       <Button variant={isMostPopular ? "primary" : "secondary"} isFullSize>

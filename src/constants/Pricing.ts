@@ -3,8 +3,8 @@ export const pricingItems = [
     title: "Starter",
     description:
       "Perfect for freelancers or small teams who need essential tools to get organized and deliver results.",
-    monthlyPrice: 19,
-    annuallyPrice: 190,
+    monthlyPrice: 15,
+    annuallyPrice: 120,
     features: [
       "Basic CRM dashboard and contact management",
       "Up to 3 team members",
@@ -19,8 +19,8 @@ export const pricingItems = [
     title: "Professional",
     description:
       "Advanced tools for growing businesses to streamline workflows and strengthen customer relationships.",
-    monthlyPrice: 49,
-    annuallyPrice: 490,
+    monthlyPrice: 39,
+    annuallyPrice: 312,
     features: [
       "Everything in Starter",
       "Lead management and pipeline tracking",
@@ -36,8 +36,8 @@ export const pricingItems = [
     title: "Enterprise",
     description:
       "The ultimate solution for enterprises needing powerful tools, customization, and premium support.",
-    monthlyPrice: 99,
-    annuallyPrice: 990,
+    monthlyPrice: 89,
+    annuallyPrice: 712,
     features: [
       "Everything in Professional",
       "Unlimited team members",
