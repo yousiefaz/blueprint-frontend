@@ -47,7 +47,7 @@ const Home = () => {
                   Get Started
                   <MoveRight className="w-4 h-4" />
                 </Button>
-                <Link href={""}>
+                <Link href={"#pricing"}>
                   <Button variant="outline">View Pricing</Button>
                 </Link>
               </div>
