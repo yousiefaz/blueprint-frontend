@@ -1,4 +1,4 @@
-import { Feature } from "@/types/Interfaces";
+import { Feature } from "@/types/interfaces";
 import Image from "next/image";
 import { FC } from "react";
 

@@ -1,4 +1,4 @@
-import { Pricing, PricingMode } from "@/types/Interfaces";
+import { Pricing, PricingMode } from "@/types/interfaces";
 import { FC } from "react";
 import Button from "@/components/Button";
 import { Check } from "lucide-react";

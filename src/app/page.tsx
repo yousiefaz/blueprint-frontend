@@ -3,7 +3,7 @@ import FeatureCard from "@/components/FeatureCard";
 import FeatureBlock from "@/components/FeatureBlock";
 import Heading from "@/components/Heading";
 import { CLIENTS } from "@/constants/clients";
-import { FEATURES, FeaturesBlock } from "@/constants/features";
+import { FEATURES, FEATURES_BLOCK } from "@/constants/features";
 import { ArrowBigRight, ArrowRightCircle, MoveRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -115,7 +115,7 @@ const Home = () => {
             </div>
           </div>
           {/* subSection - 2*/}
-          {FeaturesBlock.map((item, index) => (
+          {FEATURES_BLOCK.map((item, index) => (
             <FeatureBlock key={index} {...item} />
           ))}
         </section>

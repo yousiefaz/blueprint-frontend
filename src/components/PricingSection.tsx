@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Heading from "@/components/Heading";
 import { PRICING_ITEMS } from "@/constants/pricing";
 import PricingCard from "@/components/PricingCard";
-import { PricingMode } from "@/types/Interfaces";
+import { PricingMode } from "@/types/interfaces";
 
 export const PricingSection = () => {
   const [mode, setMode] = useState<PricingMode>("monthly");

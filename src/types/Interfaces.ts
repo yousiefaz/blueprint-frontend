@@ -22,11 +22,12 @@ export interface Pricing {
   isMostPopular?: boolean;
   glowPosition?: " right" | "left";
 }
+
+export type PricingMode = "monthly" | "annually";
+
 export interface Testimonial {
   imageUrl: string;
   name: string;
   role: string;
   review: string;
 }
-
-export type PricingMode = "monthly" | "annually";
