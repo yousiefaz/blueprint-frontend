@@ -19,7 +19,7 @@ const Button: FC<ButtonProps> = ({
           : variant === "secondary"
           ? "btn-secondary"
           : "btn-outline"
-      }`}
+      } hover:cursor-pointer`}
     >
       {children}
     </button>
