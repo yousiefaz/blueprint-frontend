@@ -2,14 +2,14 @@ import Button from "@/components/Button";
 import FeatureCard from "@/components/FeatureCard";
 import FeatureBlock from "@/components/FeatureBlock";
 import Heading from "@/components/Heading";
-import { Clients } from "@/constants/Clients";
-import { Features, FeaturesBlock } from "@/constants/Features";
+import { CLIENTS } from "@/constants/clients";
+import { FEATURES, FeaturesBlock } from "@/constants/features";
 import { ArrowBigRight, ArrowRightCircle, MoveRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { PricingSection } from "@/components/PricingSection";
 import TestimonialCard from "@/components/TestimonialCard";
-import { Testimonials } from "@/constants/Testimonials";
+import { TESTIMONIALS } from "@/constants/testimonials";
 
 const Home = () => {
   return (
@@ -67,7 +67,7 @@ const Home = () => {
           id="Clients"
           className="max-w-[62rem] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-12 gap-y-4"
         >
-          {Clients.map((client, index) => (
+          {CLIENTS.map((client, index) => (
             <Image
               key={index}
               src={client.imageUrl}
@@ -109,7 +109,7 @@ const Home = () => {
               </Button>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-1 gap-4">
-              {Features.map((feature, index) => (
+              {FEATURES.map((feature, index) => (
                 <FeatureCard key={index} {...feature} />
               ))}
             </div>
@@ -125,7 +125,7 @@ const Home = () => {
         <section id="testimonials" className="flex flex-col gap-8">
           <Heading title="what our users say" isCentered />
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
-          {Testimonials.map((testimonial, index) => (
+          {TESTIMONIALS.map((testimonial, index) => (
             <TestimonialCard key={index} {...testimonial} />
           ))}
         </section>

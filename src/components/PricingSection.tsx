@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Heading from "@/components/Heading";
-import { pricingItems } from "@/constants/Pricing";
+import { PRICING_ITEMS } from "@/constants/pricing";
 import PricingCard from "@/components/PricingCard";
 import { PricingMode } from "@/types/Interfaces";
 
@@ -33,7 +33,7 @@ export const PricingSection = () => {
         </p>
       </div>
       <div className="grid md:grid-cols-2  lg:grid-cols-3 gap-4">
-        {pricingItems.map((item, index) => (
+        {PRICING_ITEMS.map((item, index) => (
           <PricingCard key={index} {...item} mode={mode} />
         ))}
       </div>

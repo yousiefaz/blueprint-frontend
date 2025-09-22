@@ -1,6 +1,6 @@
 "use client";
 
-import { NavLinks } from "@/constants/NavLinks";
+import { NAV_LINKS } from "@/constants/navLinks";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
@@ -44,7 +44,7 @@ const MobileNav = () => {
         }`}
       >
         <nav className="flex flex-col p-2 space-y-2 capitalize font-normal">
-          {NavLinks.map((link, index) => (
+          {NAV_LINKS.map((link, index) => (
             <Link
               key={index}
               href={`#${link}`}

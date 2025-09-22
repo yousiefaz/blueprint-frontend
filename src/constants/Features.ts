@@ -1,6 +1,6 @@
-import { Feature, featureBlock } from "@/types/Interfaces";
+import { Feature, FeatureBlock } from "@/types/Interfaces";
 
-export const Features: Feature[] = [
+export const FEATURES: Feature[] = [
   {
     imageUrl: "/icons/trophy.png",
     title: "Real-Time Analytics",
@@ -20,7 +20,7 @@ export const Features: Feature[] = [
   },
 ];
 
-export const FeaturesBlock: featureBlock[] = [
+export const FeaturesBlock: FeatureBlock[] = [
   {
     imageUrl: "/messaging.svg",
     title: "Integrated Messaging System",
@@ -32,6 +32,6 @@ export const FeaturesBlock: featureBlock[] = [
     title: "Efficient Resource Allocation",
     content:
       "Optimize your team's productivity by assigning tasks, tracking availability, and managing resources effortlessly.",
-    isReversed : true,
+    isReversed: true,
   },
 ];

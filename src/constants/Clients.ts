@@ -1,6 +1,6 @@
 import { Client } from "@/types/Interfaces";
 
-export const Clients: Client[] = [
+export const CLIENTS: Client[] = [
   {
     imageUrl: "/logos/yourLogo-red.png",
     alt: "Client2",

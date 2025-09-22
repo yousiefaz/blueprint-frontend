@@ -1,4 +1,4 @@
-export const pricingItems = [
+export const PRICING_ITEMS = [
   {
     title: "Starter",
     description:

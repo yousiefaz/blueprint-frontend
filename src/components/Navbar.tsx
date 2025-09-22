@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Logo from "./Logo";
-import { NavLinks } from "@/constants/NavLinks";
+import { NAV_LINKS } from "@/constants/navLinks";
 import MobileNav from "./MobileNav";
 
 const Navbar = () => {
@@ -11,7 +11,7 @@ const Navbar = () => {
           <Logo />
 
           <nav className="hidden md:flex items-center gap-8 capitalize">
-            {NavLinks.map((link, index) => (
+            {NAV_LINKS.map((link, index) => (
               <Link
                 key={index}
                 href={`#${link}`}

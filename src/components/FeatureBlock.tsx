@@ -1,4 +1,4 @@
-import { featureBlock } from "@/types/Interfaces";
+import { FeatureBlock } from "@/types/Interfaces";
 import Image from "next/image";
 import { FC } from "react";
 import Heading from "@/components/Heading";
