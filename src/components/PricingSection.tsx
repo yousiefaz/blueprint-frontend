@@ -9,7 +9,7 @@ import { PricingMode } from "@/types/Interfaces";
 export const PricingSection = () => {
   const [mode, setMode] = useState<PricingMode>("monthly");
   return (
-    <section id="priicing" className="flex flex-col gap-8">
+    <section id="pricing" className="flex flex-col gap-8">
       <Heading
         title="Flexible Plans for Every Stage of Your Business"
         isCentered

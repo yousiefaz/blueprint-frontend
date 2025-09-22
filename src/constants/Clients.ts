@@ -2,23 +2,23 @@ import { Client } from "@/types/Interfaces";
 
 export const Clients: Client[] = [
   {
-    imageUrl: "/yourLogo-red.png",
+    imageUrl: "/logos/yourLogo-red.png",
     alt: "Client2",
   },
   {
-    imageUrl: "/yourLogo-green.png",
+    imageUrl: "/logos/yourLogo-green.png",
     alt: "Client3",
   },
   {
-    imageUrl: "/yourLogo-blue.png",
+    imageUrl: "/logos/yourLogo-blue.png",
     alt: "Client4",
   },
   {
-    imageUrl: "/yourLogo-yellow.png",
+    imageUrl: "/logos/yourLogo-yellow.png",
     alt: "Client5",
   },
   {
-    imageUrl: "/yourLogo-black.png",
+    imageUrl: "/logos/yourLogo-black.png",
     alt: "Client6",
   },
 ];

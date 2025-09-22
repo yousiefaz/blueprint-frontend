@@ -49,7 +49,7 @@ const PricingCard: FC<PricingCardProps> = ({
       <ul className="space-y-4">
         {features.map((feature, index) => (
           <li key={index} className="flex items-center gap-4">
-            <Check className="textsky-600" />
+            <Check className="text-sky-600" />
             {feature}
           </li>
         ))}
