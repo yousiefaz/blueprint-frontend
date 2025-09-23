@@ -20,7 +20,7 @@ export interface Pricing {
   annuallyPrice: number;
   features: string[];
   isMostPopular?: boolean;
-  glowPosition?: " right" | "left";
+  glowPosition?: "right" | "left";
 }
 
 export type PricingMode = "monthly" | "annually";
