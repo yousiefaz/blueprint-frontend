@@ -124,10 +124,11 @@ const Home = () => {
         {/* Testimonials Section */}
         <section id="testimonials" className="flex flex-col gap-8">
           <Heading title="what our users say" isCentered />
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
-          {TESTIMONIALS.map((testimonial, index) => (
-            <TestimonialCard key={index} {...testimonial} />
-          ))}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {TESTIMONIALS.map((testimonial, index) => (
+              <TestimonialCard key={index} {...testimonial} />
+            ))}
+          </div>
         </section>
         {/* Contact Section */}
 
