@@ -61,6 +61,7 @@ const Home = () => {
             />
           </div>
         </section>
+        {/* Home Section */}
 
         {/* Clients Section */}
         <section
@@ -78,12 +79,14 @@ const Home = () => {
             />
           ))}
         </section>
+        {/* Clients Section */}
+
         {/* Features Section */}
         <section
           id="features"
           className="flex flex-col gap-y-12 md:gap-y-20 lg:gap-y-28 "
         >
-          {/* subSection - 1*/}
+          {/* Part-1 */}
           <div className="relative grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
             <div className="absolute inset-0 -z-50">
               <Image
@@ -114,13 +117,20 @@ const Home = () => {
               ))}
             </div>
           </div>
-          {/* subSection - 2*/}
+          {/* Part-1 */}
+
+          {/* Part-2 */}
           {FEATURES_BLOCK.map((item, index) => (
             <FeatureBlock key={index} {...item} />
           ))}
+          {/* Part-2 */}
         </section>
+        {/* Features Section */}
+
         {/* Pricing Section */}
         <PricingSection />
+        {/* Pricing Section */}
+
         {/* Testimonials Section */}
         <section id="testimonials" className="flex flex-col gap-8">
           <Heading title="what our users say" isCentered />
@@ -130,8 +140,14 @@ const Home = () => {
             ))}
           </div>
         </section>
+        {/* Testimonials Section */}
+
+        {/* Contact Section */}
+        {/* --- */}
         {/* Contact Section */}
 
+        {/* Footer Section */}
+        {/* --- */}
         {/* Footer Section */}
       </div>
     </main>
