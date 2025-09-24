@@ -1,21 +1,16 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 
 const Logo = () => {
   return (
-    <Link
-      href="/"
-      className="flex items-center gap-2 transition-transform duration-200"
-    >
-      <Image
-        src="/logos/yourLogo-white.png"
-        alt="VGA Logo"
-        width={90}
-        height={100}
-      />
-      <h1 className="text-2xl font-bold text-sky-400 tracking-wide capitalize hover:text-sky-600 transition-colors">
-        yaz
-      </h1>
+    <Link href="/src/app/page.tsx" className="flex items-end gap-2 ">
+      {/* <Image src="/logo.png" width={32} height={32} alt="logo" /> */}
+      <div className="relative">
+        <h1 className="capitalize text-white text-2xl font-bold tracking-wide hover:text-sky-500 transition-all duration-1000">
+          blueprint
+        </h1>
+        <div className="absolute -right-2.5 bottom-1.5 w-2 h-2 rounded-full bg-sky-500" />
+      </div>
     </Link>
   );
 };

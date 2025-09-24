@@ -43,10 +43,7 @@ const Home = () => {
                 analytics to make smarter decisions and drive growth.
               </p>
               <div className="flex items-center gap-4">
-                <Button>
-                  Get Started
-                  <MoveRight className="w-4 h-4" />
-                </Button>
+                <Button>Get Started</Button>
                 <Link href={"#pricing"}>
                   <Button variant="outline">View Pricing</Button>
                 </Link>
@@ -106,10 +103,7 @@ const Home = () => {
                 on what matters most—building connections and closing deals
                 faster.
               </p>
-              <Button>
-                get started
-                <ArrowBigRight className="w-4 h-4" />
-              </Button>
+              <Button>get started</Button>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-1 gap-4">
               {FEATURES.map((feature, index) => (
@@ -143,11 +137,27 @@ const Home = () => {
         {/* Testimonials Section */}
 
         {/* Contact Section */}
-        {/* --- */}
+        <section id="contact">
+          <div className="flex flex-col gap-6 lg:flex-row justify-between items-center bg-slate-800 rounded-lg px-8 py-8 lg:px-24 lg:py-12 ">
+            <div className="flex flex-col gap-4 text-center lg:text-start">
+              <Heading title="Ready to get started?" />
+              <p className="max-w-[35rem] leading-normal text-lg">
+                Join thousands of companies around the world that have
+                revolutionized their sales and customer relationships with our
+                cutting-edge CRM. Start your free trial today and experience the
+                power of our platform for yourself.
+              </p>
+            </div>
+            <Button>
+              get started
+              <MoveRight className="w-4 h-4" />
+            </Button>
+          </div>
+        </section>
         {/* Contact Section */}
 
         {/* Footer Section */}
-        {/* --- */}
+        <section id="#" className="flex flex-col gap-8 "></section>
         {/* Footer Section */}
       </div>
     </main>

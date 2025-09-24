@@ -22,7 +22,7 @@ const PricingCard: FC<PricingCardProps> = ({
       className={`relative w-full py-6 px-4 flex flex-col space-y-4 lg:space-y-6 ${
         isMostPopular
           ? "border-2 border-sky-700 bg-slate-800"
-          : "border border-sky-700"
+          : "border border-slate-700"
       } rounded-lg overflow-hidden`}
     >
       <figure
