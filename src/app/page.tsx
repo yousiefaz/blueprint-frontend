@@ -16,7 +16,7 @@ const Home = () => {
     <main className="overflow-x-hidden lg:pt-24 antialiased flex items-center justify-center ">
       <div className="relative container">
         <Image
-          src="/bg2.png"
+          src="/backgrounds/bg2.png"
           width={1920}
           height={1080}
           alt="background"
@@ -43,9 +43,9 @@ const Home = () => {
                 analytics to make smarter decisions and drive growth.
               </p>
               <div className="flex items-center gap-4">
-                <Button>Get Started</Button>
+                <Button>Start Your Free Trial</Button>
                 <Link href={"#pricing"}>
-                  <Button variant="outline">View Pricing</Button>
+                  <Button variant="outline">Compare Plans</Button>
                 </Link>
               </div>
             </div>
@@ -87,7 +87,7 @@ const Home = () => {
           <div className="relative grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
             <div className="absolute inset-0 -z-50">
               <Image
-                src="/bg3.png"
+                src="/backgrounds/bg3.png"
                 alt="banner"
                 fill
                 className="object-cover opacity-5"
@@ -103,7 +103,7 @@ const Home = () => {
                 on what matters most—building connections and closing deals
                 faster.
               </p>
-              <Button>get started</Button>
+              <Button>Boost Your Sales Now</Button>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-1 gap-4">
               {FEATURES.map((feature, index) => (
