@@ -149,7 +149,7 @@ const Home = () => {
               </p>
             </div>
             <Button>
-              get started
+              Experience It Now
               <MoveRight className="w-4 h-4" />
             </Button>
           </div>
