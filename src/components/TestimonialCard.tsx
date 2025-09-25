@@ -16,7 +16,7 @@ const TestimonialCard: FC<TestimonialCardProps> = ({
     <article className="flex flex-col items-center md:items-start gap-4 py-6 px-4 rounded-lg hover:bg-slate-800 capitalize">
       <Quote className="w-12 h-12 text-sky-600" />
       <p className="text-lg text-center md:text-start">{review}</p>
-      <div className="flex items-start gap-2 justify-center">
+      <div className="flex items-start gap-2 justify-center mt-auto">
         <Image
           src={imageUrl}
           width={60}
