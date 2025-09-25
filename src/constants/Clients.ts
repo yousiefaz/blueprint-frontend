@@ -17,4 +17,8 @@ export const CLIENTS: Client[] = [
     imageUrl: "/logos/company-04.png",
     alt: "Client4",
   },
+  {
+    imageUrl: "/logos/company-05.png",
+    alt: "Client5",
+  },
 ];
