@@ -2,14 +2,14 @@ import Button from "@/components/Button";
 import FeatureCard from "@/components/FeatureCard";
 import FeatureBlock from "@/components/FeatureBlock";
 import Heading from "@/components/Heading";
-import { CLIENTS } from "@/constants/clients";
-import { FEATURES, FEATURES_BLOCK } from "@/constants/features";
-import { ArrowRightCircle, MoveRight } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
-import { PricingSection } from "@/components/PricingSection";
 import TestimonialCard from "@/components/TestimonialCard";
+import { PricingSection } from "@/components/PricingSection";
+import { CLIENTS } from "@/constants/Clients";
+import { FEATURES, FEATURES_BLOCK } from "@/constants/features";
 import { TESTIMONIALS } from "@/constants/testimonials";
+import { ArrowRightCircle, MoveRight } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
 
 const Home = () => {
   return (
