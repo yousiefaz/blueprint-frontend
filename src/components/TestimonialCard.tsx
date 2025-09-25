@@ -3,14 +3,15 @@ import { Quote } from "lucide-react";
 import Image from "next/image";
 import { FC } from "react";
 
-// eslint-disable-next-line @typescript-eslint/no-empty-object-type
-interface TestimonialCardProps extends Testimonial {}
-
+interface TestimonialCardProps extends Testimonial {
+  _isEmpty?: boolean;
+}
 const TestimonialCard: FC<TestimonialCardProps> = ({
   imageUrl,
   name,
   role,
   review,
+  _isEmpty,
 }) => {
   return (
     <article className="flex flex-col items-center md:items-start gap-4 py-6 px-4 rounded-lg hover:bg-slate-800 capitalize">
