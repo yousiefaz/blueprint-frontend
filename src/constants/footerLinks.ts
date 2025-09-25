@@ -18,4 +18,8 @@ export const FOOTER_LINKS: FooterColumn[] = [
     title: "Company",
     links: ["About Us", "Careers", "Privacy Policy", "Contact"],
   },
+  {
+    title: "Product",
+    links: ["Pricing", "Integrations", "Demo", "Release Notes"],
+  },
 ];

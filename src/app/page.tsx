@@ -154,10 +154,6 @@ const Home = () => {
           </div>
         </section>
         {/* Contact Section */}
-
-        {/* Footer Section */}
-        <section id="#" className="flex flex-col gap-8 "></section>
-        {/* Footer Section */}
       </div>
     </main>
   );
