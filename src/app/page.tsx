@@ -69,7 +69,7 @@ const Home = () => {
             <Image
               key={index}
               src={client.imageUrl}
-              width={600}
+              width={6000}
               height={600}
               alt={client.alt}
               className="w-20 md:w-full mx-auto grayscale hover:grayscale-0 transition-all duration-300"
