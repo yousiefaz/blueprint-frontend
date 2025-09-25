@@ -1,44 +1,62 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import Logo from "@/components/Logo";
-import {
-  Facebook,
-  Github,
-  Instagram,
-  Twitch,
-  Twitter,
-  X,
-  Youtube,
-} from "lucide-react";
+import { Facebook, Youtube, Instagram, Github } from "lucide-react";
+import { FOOTER_LINKS } from "@/constants/footerLinks";
 
 const Footer = () => {
+  const socialLinks: ReactNode[] = [
+    <Facebook key="f" className="social-link hover:text-sky-600" />,
+    <Youtube key="y" className="social-link hover:text-red-600" />,
+    <Instagram key="i" className="social-link hover:text-fuchsia-600" />,
+    <Github key="g" className="social-link hover:text-white" />,
+  ];
+
   return (
     <footer className="pt-20 pb-4">
       {/* Links */}
       <div className="container mb-12 flex flex-col lg:flex-row items-center justify-between">
-        <div className="basis-1/3 flex flex-col md:items-center lg:items-start gap-4  lg:gap-6">
+        <div className="basis-1/3 flex flex-col md:items-center lg:items-start gap-4 lg:gap-6">
           <Logo />
           <p className="text-lg">
             Making the world a better place through constructing elegant
             hierarchies.
           </p>
           <ul className="flex items-center gap-4 lg:gap-6 mb-6 lg:mb-0">
-            <li className="cursor-pointer">
-              <Facebook className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 hover:text-sky-600 hover:-translate-y-1 transition-all" />
-            </li>
-            <li className="cursor-pointer">
-              <Youtube className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 hover:text-red-600 hover:-translate-y-1 transition-all" />
-            </li>
-            <li className="cursor-pointer">
-              <Instagram className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 hover:text-fuchsia-600 hover:-translate-y-1 transition-all" />
-            </li>
-            <li className="cursor-pointer">
-              <Github className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 hover:text-white hover:-translate-y-1 transition-all" />
-            </li>
+            {socialLinks.map((link, index) => (
+              <li key={index} className="cursor-pointer">
+                {link}
+              </li>
+            ))}
           </ul>
         </div>
       </div>
+
+      <div className="basis-2/3 grid grid-cols-2 lg:grid-cols-4 pt-8 lg:pt-0 lg:ps-8">
+        {FOOTER_LINKS.map((column, index) => (
+          <article
+            key={index}
+            className="capitalize flex flex-col md:text-center lg:text-start"
+          >
+            <h2 className="font-bold lg:text-lg text-slate-100 mb-6">
+              {column.title}
+            </h2>
+            <ul>
+              {column.links.map((link, idx) => (
+                <li
+                  key={idx}
+                  className="font-normal pb-3 hover:text-sky-600 hover:ps-1 transition-all cursor-pointer"
+                >
+                  {link}
+                </li>
+              ))}
+            </ul>
+          </article>
+        ))}
+      </div>
       {/* Links */}
+
       {/* Copyright */}
+
       {/* Copyright */}
     </footer>
   );
