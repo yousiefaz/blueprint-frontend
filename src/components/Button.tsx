@@ -2,15 +2,11 @@ import { FC, ReactNode } from "react";
 
 interface ButtonProps {
   variant?: "primary" | "secondary" | "outline";
-  _isFullSize?: boolean;
+  isFullSize?: boolean;
   children: ReactNode;
 }
 
-const Button: FC<ButtonProps> = ({
-  variant = "primary",
-  _isFullSize,
-  children,
-}) => {
+const Button: FC<ButtonProps> = ({ variant = "primary", children }) => {
   return (
     <button
       className={`btn ${
