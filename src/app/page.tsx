@@ -1,13 +1,22 @@
+// Components (default exports)
 import Button from "@/components/Button";
 import FeatureCard from "@/components/FeatureCard";
 import FeatureBlock from "@/components/FeatureBlock";
 import Heading from "@/components/Heading";
 import TestimonialCard from "@/components/TestimonialCard";
+
+// Components (named exports)
 import { PricingSection } from "@/components/PricingSection";
+
+// Constants
 import { CLIENTS } from "@/constants/clients";
 import { FEATURES, FEATURES_BLOCK } from "@/constants/features";
 import { TESTIMONIALS } from "@/constants/testimonials";
+
+// Icons
 import { ArrowRightCircle, MoveRight } from "lucide-react";
+
+// Next.js built-ins
 import Link from "next/link";
 import Image from "next/image";
 
