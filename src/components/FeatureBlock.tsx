@@ -1,9 +1,9 @@
-import type { FeatureBlock } from "@/types/interfaces";
+import type { FeatureBlock as FeatureBlockType } from "@/types/interfaces";
 import Image from "next/image";
 import { FC } from "react";
 import Heading from "@/components/Heading";
 
-interface FeatureBlockProps extends FeatureBlock {
+interface FeatureBlockProps extends FeatureBlockType {
   isReversed?: boolean;
 }
 
