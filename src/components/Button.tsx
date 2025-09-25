@@ -2,13 +2,13 @@ import { FC, ReactNode } from "react";
 
 interface ButtonProps {
   variant?: "primary" | "secondary" | "outline";
-  isFullSize?: boolean;
+  _isFullSize?: boolean;
   children: ReactNode;
 }
 
 const Button: FC<ButtonProps> = ({
   variant = "primary",
-  isFullSize,
+  _isFullSize,
   children,
 }) => {
   return (

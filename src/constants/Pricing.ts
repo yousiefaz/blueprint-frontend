@@ -1,4 +1,6 @@
-export const PRICING_ITEMS = [
+import { Pricing } from "@/types/interfaces";
+
+export const PRICING_ITEMS: Pricing[] = [
   {
     title: "Starter",
     description:
@@ -29,7 +31,7 @@ export const PRICING_ITEMS = [
       "50 GB secure cloud storage",
       "Advanced analytics and reporting",
     ],
-    isMostPopular: true,
+    isMostPopular: true, // ✅ no glowPosition here
   },
 
   {

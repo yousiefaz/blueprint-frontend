@@ -4,7 +4,7 @@ import FeatureBlock from "@/components/FeatureBlock";
 import Heading from "@/components/Heading";
 import TestimonialCard from "@/components/TestimonialCard";
 import { PricingSection } from "@/components/PricingSection";
-import { CLIENTS } from "@/constants/Clients";
+import { CLIENTS } from "@/constants/clients";
 import { FEATURES, FEATURES_BLOCK } from "@/constants/features";
 import { TESTIMONIALS } from "@/constants/testimonials";
 import { ArrowRightCircle, MoveRight } from "lucide-react";
