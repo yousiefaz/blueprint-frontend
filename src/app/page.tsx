@@ -4,7 +4,7 @@ import FeatureBlock from "@/components/FeatureBlock";
 import Heading from "@/components/Heading";
 import { CLIENTS } from "@/constants/clients";
 import { FEATURES, FEATURES_BLOCK } from "@/constants/features";
-import { ArrowBigRight, ArrowRightCircle, MoveRight } from "lucide-react";
+import { ArrowRightCircle, MoveRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { PricingSection } from "@/components/PricingSection";
@@ -38,9 +38,9 @@ const Home = () => {
               </p>
               <Heading title="All Your Customers, One View" />
               <p className="max-w-[46rem] leading-normal sm:text-lg sm:leading-8">
-                Get a complete view of your customers and business at a glance.
-                Track leads, sales, and interactions in one place with real-time
-                analytics to make smarter decisions and drive growth.
+                Get a complete view of customers and business at a glance. Track
+                leads, sales, and interactions in one place with real-time
+                analytics to make smarter decisions and grow.
               </p>
               <div className="flex items-center gap-4">
                 <Button>Start Your Free Trial</Button>
@@ -97,11 +97,10 @@ const Home = () => {
             <div className="flex flex-col gap-4 items-center text-center lg:items-start lg:text-start">
               <Heading title="Features that simplify sales, centralize leads, and keep the focus on your customers." />
               <p className="lg:max-w-[34rem] leading-normal sm:text-lg sm:leading-8">
-                Our CRM equips you with the tools to organize leads, streamline
-                your sales process, and strengthen customer relationships. With
-                intuitive features and real-time insights, you can stay focused
-                on what matters most—building connections and closing deals
-                faster.
+                Our CRM gives you the tools to organize leads, simplify sales,
+                and strengthen customer relationships. With intuitive features
+                and real-time insights, you can focus on what matters most:
+                building connections and closing deals faster.
               </p>
               <Button>Boost Your Sales Now</Button>
             </div>

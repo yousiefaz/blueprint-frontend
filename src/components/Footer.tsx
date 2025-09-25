@@ -4,6 +4,7 @@ import { Facebook, Youtube, Instagram, Github } from "lucide-react";
 import { FOOTER_LINKS } from "@/constants/footerLinks";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   const socialLinks: ReactNode[] = [
     <Facebook key="f" className="social-link hover:text-sky-600" />,
     <Youtube key="y" className="social-link hover:text-red-600" />,
@@ -14,7 +15,7 @@ const Footer = () => {
   return (
     <footer className="pt-20 pb-4">
       {/* Links */}
-      <div className="container mb-12 flex flex-col lg:flex-row items-center justify-between">
+      <div className="container mb-12 flex flex-col lg:flex-row">
         <div className="basis-1/3 flex flex-col md:items-center lg:items-start gap-4 lg:gap-6">
           <Logo />
           <p className="text-lg">
@@ -29,35 +30,41 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-      </div>
-
-      <div className="basis-2/3 grid grid-cols-2 lg:grid-cols-4 pt-8 lg:pt-0 lg:ps-8">
-        {FOOTER_LINKS.map((column, index) => (
-          <article
-            key={index}
-            className="capitalize flex flex-col md:text-center lg:text-start"
-          >
-            <h2 className="font-bold lg:text-lg text-slate-100 mb-6">
-              {column.title}
-            </h2>
-            <ul>
-              {column.links.map((link, idx) => (
-                <li
-                  key={idx}
-                  className="font-normal pb-3 hover:text-sky-600 hover:ps-1 transition-all cursor-pointer"
-                >
-                  {link}
-                </li>
-              ))}
-            </ul>
-          </article>
-        ))}
+        <div className="basis-2/3 grid grid-cols-2 lg:grid-cols-4 pt-8 lg:pt-0 lg:ps-8 lg:gap-7">
+          {FOOTER_LINKS.map((column, index) => (
+            <article
+              key={index}
+              className="capitalize flex flex-col md:text-center lg:text-start"
+            >
+              <h2 className="font-bold lg:text-lg text-slate-100 mb-6">
+                {column.title}
+              </h2>
+              <ul>
+                {column.links.map((link, index) => (
+                  <li
+                    key={index}
+                    className="font-normal pb-3 hover:text-sky-600 hover:ps-1 transition-all cursor-pointer"
+                  >
+                    {link}
+                  </li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </div>
       </div>
       {/* Links */}
 
-      {/* Copyright */}
-
-      {/* Copyright */}
+      {/* Copyrights */}
+      <div className="container border-t border-slate-700">
+        <p className="capitalize text-sm text-center pt-4 lg:text-start">
+          {`© ${currentYear} blueprint. All rights reserved.`}
+        </p>
+        <p className="capitalize text-sm text-center pt-4 lg:text-start text-sky-600">
+          made with love{"<3"}
+        </p>
+      </div>
+      {/* Copyrights */}
     </footer>
   );
 };

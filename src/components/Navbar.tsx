@@ -5,7 +5,7 @@ import MobileNav from "@/components/MobileNav";
 
 const Navbar = () => {
   return (
-    <header className="fixed top-0 left-0 w-full bg-slate-900/50 backdrop-blur-md z-30">
+    <header className="fixed top-0 left-0 w-full bg-slate-900/50 backdrop-blur-md z-30 rounded-b-lg">
       {/* container controls left & right padding consistently */}
       <div className="container mx-auto py-6 flex items-center justify-between">
         {/* Logo inside container so it aligns with grid */}
