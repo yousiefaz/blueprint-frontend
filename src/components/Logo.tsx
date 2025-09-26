@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Logo = () => {
   return (
-    <Link href="/" className="flex items-end gap-3 ">
+    <Link href="/" className="flex items-end gap-3 hov ">
       <Image src="/logos/blueprint.png" width={32} height={32} alt="logo" />
       <div className="relative space-x-0.5">
         <h1 className="capitalize text-white text-2xl font-bold tracking-wide hover:text-sky-500 transition-all duration-1500">
