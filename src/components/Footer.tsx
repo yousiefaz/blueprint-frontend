@@ -30,7 +30,7 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-        <div className="basis-2/3 grid grid-cols-2 lg:grid-cols-4 pt-8 lg:pt-0 lg:ps-8 lg:gap-7">
+        <div className="basis-2/3 grid grid-cols-2 lg:grid-cols-4 pt-8 lg:pt-0 lg:ps-8 lg:gap-6">
           {FOOTER_LINKS.map((column, index) => (
             <article
               key={index}
