@@ -58,7 +58,14 @@ const Footer = () => {
       {/* Copyrights */}
       <div className="container border-t border-slate-700">
         <p className="capitalize text-sm text-center pt-4 lg:text-start">
-          {`© ${currentYear} blueprint. All rights reserved.`}
+          {`© ${currentYear} blueprint — by `}
+          <a
+            href="https://www.google.com/"
+            className="font-semibold text-sky-600 "
+            title="it's me"
+          >
+            Yaz
+          </a>
         </p>
         <p className="capitalize text-sm text-center pt-4 lg:text-start text-sky-600">
           made with love{"<3"}
