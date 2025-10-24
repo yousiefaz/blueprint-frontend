@@ -61,13 +61,16 @@ const Footer = () => {
           {`© ${currentYear} blueprint — by `}
           <a
             href="https://www.google.com/"
-            className="font-semibold text-sky-600 "
+            className="font-bold text-sky-600 "
             title="it's me"
           >
             Yaz
           </a>
         </p>
-        <p className="capitalize text-sm text-center pt-4 lg:text-start text-sky-600">
+        <p
+          className="capitalize text-sm text-center pt-4 lg:text-start text-sky-600 cursor-default"
+          title="it's art do not touch it"
+        >
           made with love{"<3"}
         </p>
       </div>
