@@ -68,10 +68,10 @@ const Footer = () => {
           </a>
         </p>
         <p
-          className="capitalize text-sm text-center pt-4 lg:text-start text-sky-600 cursor-default"
+          className="text-sm md:text-base italic text-center md:text-start text-sky-600 cursor-default"
           title="it's art do not touch it"
         >
-          made with love{"<3"}
+          &ldquo; Made with love &lt;3 &rdquo;
         </p>
       </div>
       {/* Copyrights */}
