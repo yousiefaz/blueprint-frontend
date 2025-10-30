@@ -60,7 +60,7 @@ const Footer = () => {
         <p className="capitalize text-sm text-center pt-4 lg:text-start">
           {`© ${currentYear} blueprint — by `}
           <a
-            href="https://yousiefaz-portfolio.vercel.app/"
+            href="https://www.yousiefaz.online/"
             className="font-bold text-sky-600 "
             title="it's me"
           >
